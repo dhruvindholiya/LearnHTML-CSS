@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'Caviar-dreams';
+    src: url('../font/Caviar_Dreams_Bold-webfont.woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Caviar-dreams';
+    src: url('../font/CaviarDreams-webfont.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: 'Caviar-dreams' , monospace , sans-serif;
+    background-color: #f3e1e2;
+    color: #9a9a9a;
+}
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.float_l {
+    float: left;
+}
+.float_r {
+    float: right;
+}
+.container {
+    max-width: 1026px;
+    width: 100%;
+    padding: 0 13px;
+    margin: 0 auto;
+}
+.LoginPage_inner {
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: -5px 5px 15px #00000040;
+    margin: 13px 0;
+    overflow: hidden;
+}
+.LoginPage_inner > div {
+    max-width: 50%;
+    width: 100%;
+}
+.LoginPage_inner h1 {
+    font-size: 38px;
+    color: #a91d40;
+    margin-top: 6px;
+}
+.form_part {
+    text-align: center;
+    padding: 42px;
+}
+.social_media {
+    margin: 15px auto;
+}
+.social_media i {
+    font-size: 26px;
+    padding: 10px;
+}
+.social_media .social_icon {
+    display: inline-block;
+    border: 3px solid #a91d40;
+    height: 50px;
+    width: 50px;
+    color: #a91d40;
+    border-radius: 50%;
+    transition: 0.3s;
+    margin: 0 20px;
+}
+.social_media .social_icon:hover,
+.social_media .social_icon:focus,
+.social_media .social_icon:active {
+    background-color: #a91d40;
+    color: #ffffff;
+
+}
+.login_account p {
+    margin-top: 28px;
+}
+.login_form {
+    margin-top: 22px;
+    margin-bottom: 42px;
+}
+.login_form input {
+    max-width: 280px;
+    width: 100%;
+    background-color: #efefef;
+    color: #696969;
+    border: 2px solid #efefef;
+    height: 48px;
+    margin: 0 auto 20px;
+    padding: 0 18px;
+    font-weight: 600;
+    outline: none;
+    transition: 0.3s;
+    display: block;
+}
+.login_form input:-webkit-autofill,
+.login_form input:-webkit-autofill:hover, 
+.login_form input:-webkit-autofill:focus {
+    -webkit-box-shadow:0 0 0 50px white inset;
+    -webkit-text-fill-color: #696969;
+    transition: background-color 5000s ease-in-out 0s;
+}
+.login_form input:hover {
+    border-color: #696969;
+}
+.login_form input:focus {
+    border-color: #a91d40;
+    background-color: #ffffff;
+}
+.login_form .forgot_pass_txt {
+    color: #a91d40;
+    font-weight: 600;
+    line-height: 22px;
+    text-decoration: none;
+    position: relative;
+}
+.login_form .forgot_pass_txt::after {
+    content: '';
+    position: absolute;
+    left: 2px;
+    bottom: -4px;
+    right: 2px;
+    height: 1px;
+    background-color: #a91d40;
+    opacity: 0;
+    transition: 0.3s;
+}
+.login_form .forgot_pass_txt:hover::after,
+.login_form .forgot_pass_txt:active::after,
+.login_form .forgot_pass_txt:focus::after {
+    opacity: 1;
+}
+.login_form button {
+    background-color: #a91d40;
+    color: #ffffff;
+    margin: 39px auto 0;
+    font-size: 18px;
+    padding: 7px 33px;
+    border-radius: 25px;
+    border: 3px solid #a91d40;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+}
+.login_form button:hover,
+.login_form button:focus,
+.login_form button:active {
+    background-color: #ffffff;
+    color: #a91d40;
+}
+.img_part {
+    position: relative;
+}
+.img_part::before {
+    content: '';
+    background-image: url(../Images/orange_shade_round.webp);
+    background-position: right;
+    background-size: cover;
+    border-radius: 50% 0 0 50%;
+    height: 700px;
+    width: 700px;
+    position: absolute;
+    top: -48px;   
+}
+
+/* img animation */
+
+.img_part::before {
+    animation-name: img-animation;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes img-animation {
+    from {
+        transform: translateX(0) scale(0.95);
+    }
+    to {
+        transform: translateX(20px) scale(1) rotate(5deg);
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .container {
+        max-width: 500px;
+    }
+    .img_part {
+        display: none;
+    }
+    .LoginPage_inner  .form_part {
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 374.98px) {
+    .login_form input,
+    .login_form button {
+        max-width: 100%;
+        width: 100%;
+    }
+    .form_part {
+        padding: 25px;
+    }
+}

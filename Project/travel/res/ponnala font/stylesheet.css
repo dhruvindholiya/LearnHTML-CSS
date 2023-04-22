@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Ponnala';
+    src: url('Ponnala.eot');
+    src: url('Ponnala.eot?#iefix') format('embedded-opentype'),
+        url('Ponnala.woff2') format('woff2'),
+        url('Ponnala.woff') format('woff'),
+        url('Ponnala.ttf') format('truetype'),
+        url('Ponnala.svg#Ponnala') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

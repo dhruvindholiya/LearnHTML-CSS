@@ -1,0 +1,452 @@
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #0e1724;
+}
+section {
+    position: relative;
+    padding: 96px 32px;
+}
+.container {
+    max-width: 1175px;
+    margin: 0 auto;
+}
+img {
+    display: block;
+    width: 100%;
+}
+a {
+    text-decoration: none;
+    color: #0e1724;
+}
+h2 {
+    font-size: 41px;
+    line-height: 46px;
+    margin-bottom: 33px;
+}
+h3 {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 7px;
+}
+h4 {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 12px;
+}
+p {
+    font-size: 20px;
+    line-height: 28px;
+}
+ul {
+    list-style-type: none;
+}
+.divider::after {
+    content: '';
+    background-color: #dedede;
+    position: absolute;
+    bottom: 1px;
+    height: 1px;
+    left: 32px;
+    right: 32px;
+    
+}
+.button, button {
+    background-color: #f20091;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    font-size: 20px;
+    display: inline-block;
+    border-radius: 3px;
+    line-height: 1;
+    margin: 15px 0;
+    padding: 13px 23px;
+    transition: 0.3s;
+}
+.button:hover {
+    background-color: #d90082;
+}
+.button:active {
+    background-color: #b6006d;
+}
+.flex_inner {
+    display: flex;
+}
+.flex_block {
+    flex-basis: 50%;
+}
+.poss_section  h2 {
+    margin-bottom: 32px;
+}
+.poss_section .flex_inner {
+    column-gap: 25px;
+}
+.poss_section .poss_items_block {
+    flex-basis: 33.33%;
+    margin-bottom: 3px;
+}
+section .img_part img{
+    max-width: 510px;
+    width: 100%;
+}
+.sub_title {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 48px;
+}
+.dark_section {
+    background-color: #1f2836;
+    color: #f7f7f7;
+    padding: 64px 32px;
+}
+.poss_section img {
+    width: 80px;
+    margin-bottom: 12px;
+}
+.poss_section .flex_inner p {
+    font-size: 18px;
+    line-height: 28px;
+}
+.work_section .flex_inner,
+.security_section > div > .flex_inner {
+    column-gap: 49px;
+}
+.work_section p {
+    margin: 12px 0 32px;
+    line-height: 24px;
+    font-size: 16px;
+}
+.contact_section h2,
+.security_section h2 {
+    margin-bottom: 25px;
+}
+.sub_text {
+    margin-bottom: 48px;
+} 
+.contact_section .contect_type img,
+.security_section .security_type img  {
+    width: 72px;
+}
+.contact_section .contect_type h3,
+.security_section .security_type h3 {
+    margin-top: 24px;
+}
+.contact_section .chat_part {
+    flex-basis: 52%;
+}
+.contact_section .verify_part {
+    flex-basis: 43.9%;
+    margin-left: auto;
+}
+.contact_section .contect_type {
+    margin-bottom: 70px;
+}
+.security_section .security_type {
+    margin-top: 46px;
+}
+.security_section .safe_part {
+    flex-basis: 57%;
+}
+.security_section .support_part {
+    flex-basis: 37.3%;
+    margin-left: auto;
+    margin-bottom: 40px;
+}
+.post_section h2 {
+    margin-bottom: 26px;
+}
+.post_section .button {
+    margin: 0;
+}
+.project_section .project_inner {
+    flex-wrap: wrap;
+    gap: 47px 24px;
+}
+.project_section .flex_block {
+    flex-basis: 31.65%;
+}
+.project_section .img_part {
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+.project_section .img_part .hover_inner {
+    transition: 0.2s;
+}
+.project_section .img_part .hover_inner:hover {
+    transform: scale(1.2);
+}
+.project_section .overlay {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #19202d99;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+.project_section .img_part:hover .overlay {
+    display: flex;
+}
+.project_section .img_part a {
+    color: #f7f7f7;
+    font-size: 16px;
+    line-height: 1.5;
+    border: 2px solid #fff;
+    padding: 8px 24px;
+    font-weight: 700;
+}
+.project_section .img_part a:hover {
+    background-color: #ffffff26;
+}
+.project_section .project_inner .sub_title {
+    margin: 0;
+}
+.project_section .flex_block h3:not(:last-child) {
+    margin-top: 18px;
+}
+.project_section .btn_part {
+    text-align: center;
+}
+.project_section .btn_part a {
+    margin: 71px 0 0;
+}
+.help_section .sub_title {
+    margin-bottom: 0;
+}
+.help_section a {
+    color: #fff;
+    font-size: 24px;
+    line-height: 29px;
+    text-decoration: underline solid 1px;
+    margin-top: 26px;
+    display: inline-block;
+    transition: 0.1s;
+}
+.help_section a:hover {
+    color: #139ff0;
+}
+.help_link .help_link_wrapper {
+    margin: 10px;
+}
+.help_section .help_link {
+    columns: 2;
+    max-width: 854px;
+    column-gap: 30px;
+    margin-bottom: 25px;
+}
+footer {
+    background-color: #161e2c;
+    padding: 32px;
+    color: #fff;
+    font-size: 14px;
+}
+footer li {
+    margin-bottom: 4px;
+}
+footer .logo {
+    margin: 0 0 28px 4px;
+    display: inline-block;
+}
+footer .logo img {
+    max-width: 125px;
+    width: 100%;
+}
+footer a {
+    color: #bec0c2;
+    line-height: 20px;
+    display: inline-block;
+}
+footer a:hover {
+    text-decoration: underline solid 1px; 
+    color: #ffffff;  
+}
+footer .logo_part .flex_inner { 
+    align-items: center;
+    margin-bottom: 16px;
+}
+footer .logo_part a {
+    color: #fff;
+}
+footer .footer_top {
+    column-gap: 25px;
+    padding-bottom: 76px;
+}
+footer .footer_top .flex_block {
+    flex-basis: 15%;
+}
+footer svg {
+    fill: #f7f7f7;
+    min-width: 24px;
+    width: 24px;
+    margin-right: 12px;
+}
+footer .social_block img {
+    max-width: 135px;
+    margin-bottom: 20px;
+}
+footer .social_icon a:not(:last-child) {
+    margin-right: 20px;
+}
+footer .social_icon svg {
+    margin-right: 0;
+}
+footer .facebook:hover svg {
+    fill: #1877f2;
+}
+footer .twitter:hover svg {
+    fill: #00b6f1;
+}
+footer .youtube:hover svg {
+    fill: #ff0000;
+}
+footer .instagram:hover svg {
+    fill: #c32aa3;
+}
+footer .footer_bottom {
+    border-top: 1px solid #2b3340;
+    padding-top: 24px;
+}
+footer .footer_bottom p {
+    font-size: 13px;
+    line-height: 16px;
+}
+footer .footer_bottom p span {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    display: block;
+}
+footer .footer_bottom .flex_block {
+    flex-basis: 26%;
+}
+footer .footer_bottom .copyright_text {
+    flex-basis: 50%;
+}
+footer .footer_bottom .copyright_text p {
+    font-size: 11px;
+}
+@media screen and (max-width: 1023.98px) {
+    h2 {
+        font-size: 34px;
+        line-height: 40px;
+        margin-bottom: 16px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    p,
+    .poss_section .flex_inner p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    section,
+    .dark_section {
+        padding: 76px 16px;
+    }
+    .sub_title {
+        line-height: 26px;
+        margin-bottom: 30px;
+    } 
+    .contact_section .contect_type,
+    .help_section .help_link {
+        margin-bottom: 0;
+    }
+    .contact_section .contect_type p {
+        font-size: 16px;
+        line-height: 24px;
+    } 
+    .security_section .safe_part {
+        flex-basis: 50%;
+    }
+    .security_section .support_part {
+        flex-basis: 46%;
+    }
+    .sub_title,
+    .sub_text {
+        font-size: 20px;
+    }
+    .poss_section h2,
+    .contact_section h2, 
+    .security_section h2,
+    .post_section h2 {
+        margin-bottom: 16px;
+    }
+    .project_section .flex_block {
+        flex-basis: 48.9%;
+    }
+    .project_section .project_inner {
+        gap: 40px 16px;
+        max-width: 736px;
+    }
+    .project_section .btn_part a {
+        margin-top: 30px;
+    }
+    .help_section a {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    footer {
+        padding: 32px 16px;
+    }
+    footer .flex_inner {
+        flex-wrap: wrap;
+    }
+    footer .footer_top .flex_block {
+        flex-basis: 23%;
+    }
+    footer .footer_top .logo_part, 
+    footer .footer_top .social_block {
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    section {
+        padding: 55px 16px;
+    }
+    .container {
+        max-width: 500px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 28px;
+        line-height: 34px;
+        margin-bottom: 20px;
+    }
+    .flex_inner {
+        flex-direction: column;
+    }
+    .img_part {
+        text-align: center;
+        order: -1;
+    }
+    .flex_block {
+        flex-basis: 100%;
+    }
+    .poss_section .poss_items_block {
+        margin-bottom: 30px;
+    }
+    .poss_section img {
+        margin-bottom: 0;
+    }
+    section .img_part img {
+        margin-bottom: 30px;
+        max-width: 375px;
+    }
+    .contact_section .contect_type {
+        margin-bottom: 0;
+    }
+}

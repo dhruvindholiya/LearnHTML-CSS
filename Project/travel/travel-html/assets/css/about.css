@@ -1,0 +1,28 @@
+:root {
+    --font-black: #000;
+    --font-primary-black: #020202;
+    --font-white: #ffffff;
+    --font-gray: #858585;
+    --font-blue-green: #069ABA;
+}
+
+/* ========== Hero Section CSS ========== */
+.hero_section::before {
+    background-image: url(../images/about-hero-bg.jpg);
+}
+/* ========== Media Query ========== */
+@media screen and (max-width: 1512.98px) {
+
+}
+@media screen and (max-width: 1249.98px) {
+
+}
+@media screen and (max-width: 991.98px) {
+
+}
+@media screen and (max-width: 767.98px) {
+ 
+}
+@media screen and (max-width: 479.98px) {
+  
+}

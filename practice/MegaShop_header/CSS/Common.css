@@ -1,0 +1,320 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* 
+.animation-block {
+    background-color: #777777;
+    height: 275px;
+    width: 100%;
+    position: relative;
+    margin-top: 100px;
+}
+.animation-round {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    animation-name: ball-animation;
+    animation-duration: 6s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    position: absolute;
+    top: -30px;
+
+}
+
+@keyframes ball-animation {
+    from {
+        transform: translateX(0);
+        left: 0;
+        background-color: red;
+    }
+    to {    
+        transform: translateX(-30px);
+        left: 100%;
+        background-color: maroon;
+    }
+}
+.y-round-animation {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    animation-name: round-animation;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    position: absolute;
+    background-color: maroon;
+    left: 50%;
+}
+
+@keyframes round-animation {
+    from {
+        transform: translateY(0);
+        top: 0;
+    }
+    to {
+        transform: translateY(-50px);
+        top: 100%;
+    }
+}
+
+.animation-block span {
+    background-color: #000000;
+    width: 5px;
+    margin: 0 3px;
+    height: 150px;
+    display: inline-block;
+    animation-name: music-animation;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    transform-origin: center bottom;
+}
+.animation-block span:nth-child(1) {
+    background-color: #000000;
+    animation-delay: 0.1s;
+}
+.animation-block span:nth-child(2) {
+    background-color: #333333;
+    animation-delay: 0.2s;
+}
+.animation-block span:nth-child(3) {
+    background-color: pink;
+    animation-delay: 0.3s;
+}
+.animation-block span:nth-child(4) {
+    background-color: #b4b6bd;
+    animation-delay: 0.4s;
+}
+.animation-block span:nth-child(5) {
+    background-color: #c2d82e;
+    animation-delay: 0.5s;
+}
+.animation-block span:nth-child(6) {
+    background-color: #E76453;
+    animation-delay: 0.6s;
+}
+.animation-block span:nth-child(7) {
+    background-color: #E84530;
+    animation-delay: 0.7s;
+}
+.animation-block span:nth-child(8) {
+    background-color: green;
+    animation-delay: 0.8s;
+}
+.animation-block span:nth-child(9) {
+    background-color: yellow;
+    animation-delay: 0.9s;
+}
+
+@keyframes music-animation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+} */
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.3px;
+    height: 1000px;
+}
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0  15px;
+}
+a {
+    text-decoration: none;
+}
+p {
+    line-height: 22px;
+    font-weight: 500;   
+}
+ul {
+    list-style-type: none;
+}
+.d_flex {
+    display: flex;
+}
+.jc_sb {
+    justify-content: space-between;
+}
+.al_ctr {
+    align-items: center;
+}
+
+
+
+.header_top {
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #e0e0e0;
+}
+.header_top a {
+    color: #777777;
+}
+.header_top a:hover,
+.header_middle a:hover {
+    color: #E76453;
+}
+.header_top .social_media a {
+    font-size: 15px;
+    margin-right: 24px;
+}
+.header_top .top_menu_bar > ul > li {
+    position: relative;
+    padding: 6px 15px 6px 20px;
+}
+.header_top .top_menu_bar ul li:not(:last-child)::before {
+    content: '';
+    background: #cbcbcb;
+    width: 1px;
+    height: 13px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: -2px;
+}
+
+
+.header_middle {
+    padding: 23px 0; 
+}
+.header_middle a {
+    color: #333333;
+    white-space: nowrap;
+    display: block;
+}
+.header_middle .img_part img {
+    display: block;
+    width: 165px;
+}
+.header_middle .main_menu ul li {
+    position: relative;
+    padding: 0 20px;
+}
+.header_middle .main_menu ul li:not(:last-child)::before {
+    height: 15px;
+}
+header ul li ul {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0px 30px 20px 0px rgb(0 0 0 / 10%);
+    padding: 15px 20px;
+    z-index: 1;
+    min-width: 170px;
+    display: none;
+}
+header ul li ul li {
+    padding: 2px 0;
+}
+header ul li ul li a {
+    line-height: 22px;
+    letter-spacing: 0;
+}
+header ul ul ul {
+    left: 100%;
+    top: -9px;
+}
+
+
+.header_bottom {
+    background: -webkit-linear-gradient(top, #F4F4F4 0%, #D9D8D4 100%);
+    border-top: 1px solid #e0e0e0;
+    padding: 10px 0;
+}
+.header_bottom div ul {
+    column-gap: 10px;
+}
+.header_bottom .categories .categories_btn {
+    background-color: rgb(231,100,83);
+    color: #ffffff;
+    cursor: pointer;
+    line-height: 18px;
+    border-radius: 5px;
+    width: 240px;
+    padding: 10px 15px;
+    position: relative;
+    display: inline-block;
+}
+.header_bottom .categories .categories_btn::after {
+    content: "\f13a";
+    font-family: 'FontAwesome';
+    right: 9px;
+    position: absolute;
+    font-size: 12px;
+}
+.header_bottom .search {
+    max-width: 779px;
+    width: 100%;
+}
+.header_bottom .search input {
+    padding: 9px;
+    border: 0;
+    background-color: #ffffff;
+    border-radius: 5px;
+    max-width: 657px;
+    width: 100%;
+    outline: none;
+    height: 38px;
+}
+.header_bottom .search input::placeholder {
+    font-size: 13px;
+    line-height: 20px;
+    color: #b4b6bd;
+    font-family: 'Inter', sans-serif;
+}
+.header_bottom .search button {
+    background: -webkit-linear-gradient(top, #E76453 0%, #E84530 100%);
+    color: #fff;
+    padding: 8px 31px;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    margin-left: 10px;
+    line-height: 22px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    width: 112px;
+}
+.header_bottom .cart_btn {
+    width: 161px;
+    background-color: #c2d82e;
+    border-radius: 5px;
+    position: relative;
+    display: block;
+    padding: 8px 10px;
+    text-align: right;
+}
+.header_bottom .cart_btn::after {
+    content: '';
+    background-image: url('../Images/cart-bag.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+    height: 24px;
+    width: 28px;
+    position: absolute;
+    top: 7px;
+    left: 5px;
+}
